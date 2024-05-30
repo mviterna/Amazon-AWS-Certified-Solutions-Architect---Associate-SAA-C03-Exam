@@ -24,7 +24,7 @@ A. Use Amazon Redshift to load all the content into one place and run the SQL qu
 B. Use Amazon CloudWatch Logs to store the logs. Run SQL queries as needed from the Amazon CloudWatch console.
 
 
-`C. Use Amazon Athena directly with Amazon S3 to run the queries as needed.`
+C. Use Amazon Athena directly with Amazon S3 to run the queries as needed.
 
 
 D. Use AWS Glue to catalog the logs. Use a transient Apache Spark cluster on Amazon EMR to run the SQL queries as needed
@@ -37,7 +37,7 @@ Which solution meets these requirements with the LEAST amount of operational ove
 
 
 
-`A. Add the aws PrincipalOrgID global condition key with a reference to the organization ID to the S3 bucket policy.`
+A. Add the aws PrincipalOrgID global condition key with a reference to the organization ID to the S3 bucket policy.
 
 
 
@@ -63,7 +63,7 @@ Which solution will provide private network connectivity to Amazon S3?
 
 
 
-`A. Create a gateway VPC endpoint to the S3 bucket.`
+A. Create a gateway VPC endpoint to the S3 bucket.
 
 
 
@@ -98,7 +98,7 @@ B. Configure the Application Load Balancer to direct a user to the server with t
 
 
 
-`C. Copy the data from both EBS volumes to Amazon EFS. Modify the application to save new documents to Amazon EFS`
+C. Copy the data from both EBS volumes to Amazon EFS. Modify the application to save new documents to Amazon EFS
 
 
 
@@ -115,7 +115,7 @@ Which solution will meet these requirements?
 A. Create an S3 bucket. Create an IAM role that has permissions to write to the S3 bucket. Use the AWS CLI to copy all files locally to the S3 bucket.
 
 
-`B. Create an AWS Snowball Edge job. Receive a Snowball Edge device on premises. Use the Snowball Edge client to transfer data to the device. Return the device so that AWS can import the data into Amazon S3.`
+B. Create an AWS Snowball Edge job. Receive a Snowball Edge device on premises. Use the Snowball Edge client to transfer data to the device. Return the device so that AWS can import the data into Amazon S3.
 
 
 C. Deploy an S3 File Gateway on premises. Create a public service endpoint to connect to the S3 File Gateway. Create an S3 bucket. Create a new NFS file share on the S3 File Gateway. Point the new file share to the S3 bucket. Transfer the data from the existing NFS file share to the S3 File Gateway.
@@ -146,7 +146,7 @@ C. Write the messages to Amazon Kinesis Data Streams with a single shard. Use an
 
 
 
-`D. Publish the messages to an Amazon Simple Notification Service (Amazon SNS) topic with multiple Amazon Simple Queue Service (Amazon SOS) subscriptions. Configure the consumer applications to process the messages from the queues.`
+D. Publish the messages to an Amazon Simple Notification Service (Amazon SNS) topic with multiple Amazon Simple Queue Service (Amazon SOS) subscriptions. Configure the consumer applications to process the messages from the queues.
 
 
 
@@ -163,7 +163,7 @@ A. Configure an Amazon Simple Queue Service (Amazon SQS) queue as a destination 
 
 
 
-`B. Configure an Amazon Simple Queue Service (Amazon SQS) queue as a destination for the jobs. Implement the compute nodes with Amazon EC2 instances that are managed in an Auto Scaling group. Configure EC2 Auto Scaling based on the size of the queue.`
+B. Configure an Amazon Simple Queue Service (Amazon SQS) queue as a destination for the jobs. Implement the compute nodes with Amazon EC2 instances that are managed in an Auto Scaling group. Configure EC2 Auto Scaling based on the size of the queue.
 
 
 
@@ -186,7 +186,7 @@ Which solution will meet these requirements?
 A. Use AWS DataSync to copy data that is older than 7 days from the SMB file server to AWS.
 
 
-`B. Create an Amazon S3 File Gateway to extend the company’s storage space. Create an S3 Lifecycle policy to transition the data to S3 Glacier Deep Archive after 7 days.`
+B. Create an Amazon S3 File Gateway to extend the company’s storage space. Create an S3 Lifecycle policy to transition the data to S3 Glacier Deep Archive after 7 days.
 
 
 C. Create an Amazon FSx for Windows File Server file system to extend the company’s storage space.
@@ -208,7 +208,7 @@ A. Use an API Gateway integration to publish a message to an Amazon Simple Notif
 
 
 
-`B. Use an API Gateway integration to send a message to an Amazon Simple Queue Service (Amazon SQS) FIFO queue when the application receives an order. Configure the SQS FIFO queue to invoke an AWS Lambda function for processing.`
+B. Use an API Gateway integration to send a message to an Amazon Simple Queue Service (Amazon SQS) FIFO queue when the application receives an order. Configure the SQS FIFO queue to invoke an AWS Lambda function for processing.
 
 
 
@@ -227,7 +227,7 @@ What should a solutions architect do to accomplish this goal?
 
 
 
-`A. Use AWS Secrets Manager. Turn on automatic rotation.`
+A. Use AWS Secrets Manager. Turn on automatic rotation.
 
 
 B. Use AWS Systems Manager Parameter Store. Turn on automatic rotation.
@@ -251,7 +251,7 @@ What should a solutions architect do to meet these requirements?
 
 
 
-`A. Create an Amazon CloudFront distribution that has the S3 bucket and the ALB as origins. Configure Route 53 to route traffic to the CloudFront distribution.`
+A. Create an Amazon CloudFront distribution that has the S3 bucket and the ALB as origins. Configure Route 53 to route traffic to the CloudFront distribution.
 
 
 
@@ -278,7 +278,7 @@ Which solution will meet these requirements with the LEAST operational overhead?
 
 
 
-`A. Store the credentials as secrets in AWS Secrets Manager. Use multi-Region secret replication for the required Regions. Configure Secrets Manager to rotate the secrets on a schedule.`
+A. Store the credentials as secrets in AWS Secrets Manager. Use multi-Region secret replication for the required Regions. Configure Secrets Manager to rotate the secrets on a schedule.
 
 
 
@@ -309,7 +309,7 @@ B. Use Traffic Mirroring to mirror traffic from the production VPC for traffic i
 
 
 
-`C. Use AWS Network Firewall to create the required rules for traffic inspection and traffic filtering for the production VPC.`
+C. Use AWS Network Firewall to create the required rules for traffic inspection and traffic filtering for the production VPC.
 
 
 
@@ -333,7 +333,7 @@ B. Use Amazon RDS with a Single-AZ deployment Configure Amazon RDS to add reader
 
 
 
-`C. Use Amazon Aurora with a Multi-AZ deployment. Configure Aurora Auto Scaling with Aurora Replicas.`
+C. Use Amazon Aurora with a Multi-AZ deployment. Configure Aurora Auto Scaling with Aurora Replicas.
 
 
 
@@ -352,7 +352,7 @@ A. Create an analysis in Amazon QuickSight. Connect all the data sources and cre
 
 
 
-`B. Create an analysis in Amazon QuickSight. Connect all the data sources and create new datasets. Publish dashboards to visualize the data. Share the dashboards with the appropriate users and groups.`
+B. Create an analysis in Amazon QuickSight. Connect all the data sources and create new datasets. Publish dashboards to visualize the data. Share the dashboards with the appropriate users and groups.
 
 
 
@@ -371,7 +371,7 @@ What should the solutions architect do to meet this requirement?
 
 
 
-`A. Create an IAM role that grants access to the S3 bucket. Attach the role to the EC2 instances.`
+A. Create an IAM role that grants access to the S3 bucket. Attach the role to the EC2 instances.
 
 
 B. Create an IAM policy that grants access to the S3 bucket. Attach the policy to the EC2 instances.
@@ -392,8 +392,8 @@ Which combination of actions will meet these requirements? (Choose two.)
 
 
 
-`A. Create an Amazon Simple Queue Service (Amazon SQS) queue. Configure the S3 bucket to send a notification to the SQS queue when an image is uploaded to the S3 bucket.
-B. Configure the Lambda function to use the Amazon Simple Queue Service (Amazon SQS) queue as the invocation source. When the SQS message is successfully processed, delete the message in the queue.`
+A. Create an Amazon Simple Queue Service (Amazon SQS) queue. Configure the S3 bucket to send a notification to the SQS queue when an image is uploaded to the S3 bucket.
+B. Configure the Lambda function to use the Amazon Simple Queue Service (Amazon SQS) queue as the invocation source. When the SQS message is successfully processed, delete the message in the queue.
 
 
 
@@ -430,7 +430,7 @@ C. Deploy a transit gateway in the inspection VPConfigure route tables to route 
 
 
 
-`D. Deploy a Gateway Load Balancer in the inspection VPC. Create a Gateway Load Balancer endpoint to receive the incoming packets and forward the packets to the appliance.`
+D. Deploy a Gateway Load Balancer in the inspection VPC. Create a Gateway Load Balancer endpoint to receive the incoming packets and forward the packets to the appliance.
 
 
 
@@ -456,7 +456,7 @@ C. Take EBS snapshots of the production EBS volumes. Create and initialize new E
 
 
 
-`D. Take EBS snapshots of the production EBS volumes. Turn on the EBS fast snapshot restore feature on the EBS snapshots. Restore the snapshots into new EBS volumes. Attach the new EBS volumes to EC2 instances in the test environment.`
+D. Take EBS snapshots of the production EBS volumes. Turn on the EBS fast snapshot restore feature on the EBS snapshots. Restore the snapshots into new EBS volumes. Attach the new EBS volumes to EC2 instances in the test environment.
 
 
 
@@ -480,7 +480,7 @@ C. Migrate the full application to run in containers. Host the containers on Ama
 
 
 
-`D. Use an Amazon S3 bucket to host the website’s static content. Deploy an Amazon CloudFront distribution. Set the S3 bucket as the origin. Use Amazon API Gateway and AWS Lambda functions for the backend APIs. Store the data in Amazon DynamoDB.`
+D. Use an Amazon S3 bucket to host the website’s static content. Deploy an Amazon CloudFront distribution. Set the S3 bucket as the origin. Use Amazon API Gateway and AWS Lambda functions for the backend APIs. Store the data in Amazon DynamoDB.
 
 
 
@@ -494,7 +494,7 @@ Which storage option meets these requirements?
 A. S3 Standard
 
 
-`B. S3 Intelligent-Tiering`
+B. S3 Intelligent-Tiering
 
 
 C. S3 Standard-Infrequent Access (S3 Standard-IA)
@@ -516,7 +516,7 @@ A. Configure S3 Intelligent-Tiering to automatically migrate objects.
 
 
 
-`B. Create an S3 Lifecycle configuration to transition objects from S3 Standard to S3 Glacier Deep Archive after 1 month.`
+B. Create an S3 Lifecycle configuration to transition objects from S3 Standard to S3 Glacier Deep Archive after 1 month.
 
 
 
@@ -542,7 +542,7 @@ A. Use AWS Budgets to create a budget report and compare EC2 costs based on inst
 
 
 
-`B. Use Cost Explorer’s granular filtering feature to perform an in-depth analysis of EC2 costs based on instance types.`
+B. Use Cost Explorer’s granular filtering feature to perform an in-depth analysis of EC2 costs based on instance types.
 
 
 
@@ -579,7 +579,7 @@ C. Set up two Lambda functions. Configure one function to receive the informatio
 
 
 
-`D. Set up two Lambda functions. Configure one function to receive the information. Configure the other function to load the information into the database. Integrate the Lambda functions by using an Amazon Simple Queue Service (Amazon SQS) queue`
+D. Set up two Lambda functions. Configure one function to receive the information. Configure the other function to load the information into the database. Integrate the Lambda functions by using an Amazon Simple Queue Service (Amazon SQS) queue
 
 
 
@@ -592,7 +592,7 @@ What should a solutions architect do to accomplish this goal?
 
 
 
-`A. Turn on AWS Config with the appropriate rules.`
+A. Turn on AWS Config with the appropriate rules.
 
 
 
@@ -625,7 +625,7 @@ A. Share the dashboard from the CloudWatch console. Enter the product manager’
 
 
 
-`B. Create an IAM user specifically for the product manager. Attach the CloudWatchReadOnlyAccess AWS managed policy to the user. Share the new login credentials with the product manager. Share the browser URL of the correct dashboard with the product manager.`
+B. Create an IAM user specifically for the product manager. Attach the CloudWatchReadOnlyAccess AWS managed policy to the user. Share the new login credentials with the product manager. Share the browser URL of the correct dashboard with the product manager.
 
 
 
@@ -653,7 +653,7 @@ A. Enable AWS Single Sign-On (AWS SSO) from the AWS SSO console. Create a one-wa
 
 
 
-`B. Enable AWS Single Sign-On (AWS SSO) from the AWS SSO console. Create a two-way forest trust to connect the company’s self-managed Microsoft Active Directory with AWS SSO by using AWS Directory Service for Microsoft Active Directory.`
+B. Enable AWS Single Sign-On (AWS SSO) from the AWS SSO console. Create a two-way forest trust to connect the company’s self-managed Microsoft Active Directory with AWS SSO by using AWS Directory Service for Microsoft Active Directory.
 
 
 
@@ -677,7 +677,7 @@ Which solution will meet these requirements?
 
 
 
-`A. Deploy a Network Load Balancer (NLB) and an associated target group. Associate the target group with the Auto Scaling group. Use the NLB as an AWS Global Accelerator endpoint in each Region.`
+A. Deploy a Network Load Balancer (NLB) and an associated target group. Associate the target group with the Auto Scaling group. Use the NLB as an AWS Global Accelerator endpoint in each Region.
 
 
 
@@ -716,7 +716,7 @@ B. Use an Auto Scaling policy with the DB instance to automatically scale when t
 
 
 
-`C. Create a snapshot when tests are completed. Terminate the DB instance and restore the snapshot when required.`
+C. Create a snapshot when tests are completed. Terminate the DB instance and restore the snapshot when required.
 
 
 
@@ -733,7 +733,7 @@ What should a solutions architect do to accomplish this?
 
 
 
-`A. Use AWS Config rules to define and detect resources that are not properly tagged.`
+A. Use AWS Config rules to define and detect resources that are not properly tagged.
 
 
 
@@ -762,7 +762,7 @@ Which method is the MOST cost-effective for hosting the website?
 A. Containerize the website and host it in AWS Fargate.
 
 
-`B. Create an Amazon S3 bucket and host the website there.`
+B. Create an Amazon S3 bucket and host the website there.
 
 
 C. Deploy a web server on an Amazon EC2 instance to host the website.
@@ -788,7 +788,7 @@ B. Stream the transactions data into Amazon Kinesis Data Firehose to store data 
 
 
 
-`C. Stream the transactions data into Amazon Kinesis Data Streams. Use AWS Lambda integration to remove sensitive data from every transaction and then store the transactions data in Amazon DynamoDB. Other applications can consume the transactions data off the Kinesis data stream.`
+C. Stream the transactions data into Amazon Kinesis Data Streams. Use AWS Lambda integration to remove sensitive data from every transaction and then store the transactions data in Amazon DynamoDB. Other applications can consume the transactions data off the Kinesis data stream.
 
 
 
@@ -808,7 +808,7 @@ A. Use AWS CloudTrail to track configuration changes and AWS Config to record AP
 
 
 
-`B. Use AWS Config to track configuration changes and AWS CloudTrail to record API calls.`
+B. Use AWS Config to track configuration changes and AWS CloudTrail to record API calls.
 
 
 
@@ -839,7 +839,7 @@ C. Enable AWS Shield and assign Amazon Route 53 to it.
 
 
 
-`D. Enable AWS Shield Advanced and assign the ELB to it.`
+D. Enable AWS Shield Advanced and assign the ELB to it.
 
 
 
@@ -854,8 +854,8 @@ Which solution will meet these requirements with the LEAST operational overhead?
 A. Create an S3 bucket in each Region. Configure the S3 buckets to use server-side encryption with Amazon S3 managed encryption keys (SSE-S3). Configure replication between the S3 buckets.
 
 
-`
-B. Create a customer managed multi-Region KMS key. Create an S3 bucket in each Region. Configure replication between the S3 buckets. Configure the application to use the KMS key with client-side encryption.`
+
+B. Create a customer managed multi-Region KMS key. Create an S3 bucket in each Region. Configure replication between the S3 buckets. Configure the application to use the KMS key with client-side encryption.
 
 
 
@@ -879,7 +879,7 @@ A. Use the EC2 serial console to directly access the terminal interface of each 
 
 
 
-`B. Attach the appropriate IAM role to each existing instance and new instance. Use AWS Systems Manager Session Manager to establish a remote SSH session.`
+B. Attach the appropriate IAM role to each existing instance and new instance. Use AWS Systems Manager Session Manager to establish a remote SSH session.
 
 
 
@@ -914,7 +914,7 @@ B. Provision accelerators in AWS Global Accelerator. Associate the supplied IP a
 
 
 
-`C. Add an Amazon CloudFront distribution in front of the S3 bucket. Edit the Route 53 entries to point to the CloudFront distribution.`
+C. Add an Amazon CloudFront distribution in front of the S3 bucket. Edit the Route 53 entries to point to the CloudFront distribution.
 
 
 
@@ -932,7 +932,7 @@ Which solution addresses this performance issue?
 
 
 
-`A. Change the storage type to Provisioned IOPS SSD.`
+A. Change the storage type to Provisioned IOPS SSD.
 
 
 
@@ -959,7 +959,7 @@ What is the MOST operationally efficient solution that meets these requirements?
 
 
 
-`A. Create an Amazon Kinesis Data Firehose delivery stream to ingest the alerts. Configure the Kinesis Data Firehose stream to deliver the alerts to an Amazon S3 bucket. Set up an S3 Lifecycle configuration to transition data to Amazon S3 Glacier after 14 days.`
+A. Create an Amazon Kinesis Data Firehose delivery stream to ingest the alerts. Configure the Kinesis Data Firehose stream to deliver the alerts to an Amazon S3 bucket. Set up an S3 Lifecycle configuration to transition data to Amazon S3 Glacier after 14 days.
 
 
 
@@ -992,7 +992,7 @@ A. Create an Auto Scaling group so that EC2 instances can scale out. Configure a
 
 
 
-`B. Create an Amazon AppFlow flow to transfer data between each SaaS source and the S3 bucket. Configure an S3 event notification to send events to an Amazon Simple Notification Service (Amazon SNS) topic when the upload to the S3 bucket is complete.`
+B. Create an Amazon AppFlow flow to transfer data between each SaaS source and the S3 bucket. Configure an S3 event notification to send events to an Amazon Simple Notification Service (Amazon SNS) topic when the upload to the S3 bucket is complete.
 
 
 
@@ -1029,7 +1029,7 @@ B. Replace the NAT gateway with a NAT instance.
 
 
 
-`C. Deploy a gateway VPC endpoint for Amazon S3.`
+C. Deploy a gateway VPC endpoint for Amazon S3.
 
 
 
@@ -1053,7 +1053,7 @@ A. Establish AWS VPN connections and proxy all traffic through a VPC gateway end
 
 
 
-`B. Establish a new AWS Direct Connect connection and direct backup traffic through this new connection.`
+B. Establish a new AWS Direct Connect connection and direct backup traffic through this new connection.
 
 
 
@@ -1075,12 +1075,12 @@ Which combination of steps should a solutions architect take to meet these requi
 
 
 
-`A. Enable versioning on the S3 bucket`
+A. Enable versioning on the S3 bucket
 
 
 
 
-`B. Enable MFA Delete on the S3 bucket.`
+B. Enable MFA Delete on the S3 bucket.
 
 
 
@@ -1117,7 +1117,7 @@ A. Deploy the Lambda function in multiple Availability Zones.
 
 
 
-`B. Create an Amazon Simple Queue Service (Amazon SQS) queue, and subscribe it to the SNS topic.`
+B. Create an Amazon Simple Queue Service (Amazon SQS) queue, and subscribe it to the SNS topic.
 
 
 
@@ -1133,7 +1133,7 @@ D. Increase provisioned throughput for the Lambda function.
 
 
 
-`E. Modify the Lambda function to read from an Amazon Simple Queue Service (Amazon SQS) queue`
+E. Modify the Lambda function to read from an Amazon Simple Queue Service (Amazon SQS) queue
 
 
 ## Question#46
@@ -1150,7 +1150,7 @@ A. Use an Amazon S3 bucket as a secure transfer point. Use Amazon Inspector to s
 
 
 
-`B. Use an Amazon S3 bucket as a secure transfer point. Use Amazon Macie to scan the objects in the bucket. If objects contain PII, use Amazon Simple Notification Service (Amazon SNS) to trigger a notification to the administrators to remove the objects that contain PII.`
+B. Use an Amazon S3 bucket as a secure transfer point. Use Amazon Macie to scan the objects in the bucket. If objects contain PII, use Amazon Simple Notification Service (Amazon SNS) to trigger a notification to the administrators to remove the objects that contain PII.
 
 
 
@@ -1189,7 +1189,7 @@ C. Purchase Reserved Instances that specify the Region and three Availability Zo
 
 
 
-`D. Create an On-Demand Capacity Reservation that specifies the Region and three Availability Zones needed.`
+D. Create an On-Demand Capacity Reservation that specifies the Region and three Availability Zones needed.
 
 
 
@@ -1217,7 +1217,7 @@ C. Move the catalog from the instance store to Amazon S3 Glacier Deep Archive.
 
 
 
-`D. Move the catalog to an Amazon Elastic File System (Amazon EFS) file system.`
+D. Move the catalog to an Amazon Elastic File System (Amazon EFS) file system.
 
 
 
@@ -1236,7 +1236,7 @@ A. Store individual files with tags in Amazon S3 Glacier Instant Retrieval. Quer
 
 
 
-`B. Store individual files in Amazon S3 Intelligent-Tiering. Use S3 Lifecycle policies to move the files to S3 Glacier Flexible Retrieval after 1 year. Query and retrieve the files that are in Amazon S3 by using Amazon Athena. Query and retrieve the files that are in S3 Glacier by using S3 Glacier Select.`
+B. Store individual files in Amazon S3 Intelligent-Tiering. Use S3 Lifecycle policies to move the files to S3 Glacier Flexible Retrieval after 1 year. Query and retrieve the files that are in Amazon S3 by using Amazon Athena. Query and retrieve the files that are in S3 Glacier by using S3 Glacier Select.
 
 
 
@@ -1277,7 +1277,7 @@ C. Schedule an AWS Systems Manager maintenance window to apply the patch to all 
 
 
 
-`D. Use AWS Systems Manager Run Command to run a custom command that applies the patch to all EC2 instances.`
+D. Use AWS Systems Manager Run Command to run a custom command that applies the patch to all EC2 instances.
 
 
 
