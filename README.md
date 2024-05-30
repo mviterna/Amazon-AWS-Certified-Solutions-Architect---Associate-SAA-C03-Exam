@@ -6,7 +6,7 @@ Amazon AWS Certified Solutions Architect - Associate SAA-C03 Exam Dumps
 ### A company collects data for temperature, humidity, and atmospheric pressure in cities across multiple continents. The average volume of data that the company collects from each site daily is 500 GB. Each site has a high-speed Internet connection.The company wants to aggr egate the data from all these global sites as quickly as possible in a single Amazon S3 bucket. The solution must minimize operational complexity.
 ### Which solution meets these requirements?
 
-> **A. Turn on S3 Transfer Acceleration on the destination S3 bucket. Use multipart uploads to directly upload site data to the destination S3 bucket.**
+> A. Turn on S3 Transfer Acceleration on the destination S3 bucket. Use multipart uploads to directly upload site data to the destination S3 bucket.
 
 B. Upload the data from each site to an S3 bucket in the closest Region. Use S3 Cross-Region Replication to copy objects to the destination S3 bucket. Then remove the data from the origin S3 bucket.
 
@@ -24,7 +24,7 @@ A. Use Amazon Redshift to load all the content into one place and run the SQL qu
 B. Use Amazon CloudWatch Logs to store the logs. Run SQL queries as needed from the Amazon CloudWatch console.
 
 
-`**C. Use Amazon Athena directly with Amazon S3 to run the queries as needed.**`
+`C. Use Amazon Athena directly with Amazon S3 to run the queries as needed.`
 
 
 D. Use AWS Glue to catalog the logs. Use a transient Apache Spark cluster on Amazon EMR to run the SQL queries as needed
